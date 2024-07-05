@@ -1,0 +1,47 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+      <h1>Hi, Im Bobby.</h1>
+			<p>
+        Welcome to my site! Here you will find this blerb about me, my blog about
+        everything that interests me, and my Resume. Thank you for stopping by!
+			</p>
+			<p>
+        The year was 1988...no I wont do that to you lol. Professionally, Im a
+        cloud engineer primarily working in AWS. Ive always enjoyed working with
+        computers since I was a teenager. That curiosity eventually grew into a 9
+        year IT/sysadmin career. As technology changed, I did too. I learned about
+        this idea of DevOps and instantly became enamored. I spent alot of my free
+        time learning about this idea and how to actually implement it using
+        infrastructure as code (IaC) and CI/CD pipelines to have things work as
+        seamlessly as possible.
+			</p>
+			<p>
+        Apart from the aforementioned DevOps learning, I like to spend my free time
+        with my hobbies and spending time with my wife and dog. My hobbies can vary
+        due to my nature of context switching, but as of right now I dabble in
+        leatherworking, 3d printing, programming, and video gaming. When spending
+        time with my wife, sometimes we will go to a coffee shop, catch a show, hike,
+        or some other random fun thing we find to do.
+      </p>
+			<p>
+        If you made it this far, again, thank you for stopping by! Traffic on this
+        site validates that I am doing something right. If you want to check out more
+        head over to my <a>Blog</a> or my <a>Resume</a>.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
