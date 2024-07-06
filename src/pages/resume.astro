@@ -1,0 +1,75 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+      <div class="resume_header">
+        <h1>Bobby Wisdom</h1>
+        <p>Cloud Engineer</p>
+      </div>
+      <div class="resume_container">
+        <div class="left">
+          <div class="education">
+            <h4>EDUCATION</h4>
+            <p><b>Technology Management</b> | 2011</p>
+            <p>Texas A&M University</p>
+            <p>College Station, TX</p>
+          </div>
+          <div class="skills">
+            <h4>SKILLS</h4>
+            <ul>
+              <li>Skill #1</li>
+              <li>Skill #2</li>
+              <li>Skill #3</li>
+          </div>
+          <div class="awards">
+            <h4>AWARDS</h4>
+            <p><b>Mays Business School</b> | 2021</p>
+            <p>Star Performer Award</p>
+          </div>
+        </div>
+        <div class="right">
+          <h4>CAREER OBJECTIVE</h4>
+          <h4>EXPERIENCE</h4>
+        </div>
+      </div>
+		</main>
+		<Footer />
+	</body>
+</html>
+<style>
+  .resume_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .resume_header {
+    padding-left: 5%;
+  }
+  .left {
+    padding-right: 10px;
+    border-right: 5px solid white;
+  }
+  .education,.skills,.awards {
+    margin: 2em 0;
+  }
+  .education p {
+    margin: 0;
+  }
+  .awards p {
+    margin: 0;
+  }
+  .right {
+    margin-left: 10px;
+  }
+</style>
