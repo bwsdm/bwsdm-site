@@ -39,8 +39,45 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
           </div>
         </div>
         <div class="right">
-          <h4>CAREER OBJECTIVE</h4>
-          <h4>EXPERIENCE</h4>
+          <div class="objective">
+            <h4>CAREER OBJECTIVE</h4>
+            <p>
+              To improve operational efficiency by implementing DevOps tools
+              including, but not limited to infrastructure as code (IaC) and
+              CI/CD pipelines.
+          </div>
+          <div class="experience">
+            <h4>EXPERIENCE</h4>
+            <p><b>Texas Department of Transportation</b></p>
+            <p>June 2024 - Present</p>
+            <p>
+              <ul>
+                <li>Item #1</li>
+                <li>Item #2</li>
+                <li>Item #3</li>
+              </ul>
+            </p>
+            <br/>
+            <p><b>SAIC - USDA RMA</b></p>
+            <p>November 2021 - June 2024</p>
+            <p>
+              <ul>
+                <li>Item #1</li>
+                <li>Item #2</li>
+                <li>Item #3</li>
+              </ul>
+            </p>
+            <br/>
+            <p><b>Mays Business School - Texas A&M University</b></p>
+            <p>July 2018 - November 2021</p>
+            <p>
+              <ul>
+                <li>Item #1</li>
+                <li>Item #2</li>
+                <li>Item #3</li>
+              </ul>
+            </p>
+          </div>
         </div>
       </div>
 		</main>
@@ -50,17 +87,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <style>
   .resume_container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .resume_header {
-    padding-left: 5%;
+    justify-content: space-evenly;
   }
   .left {
-    padding-right: 10px;
+    padding-right: 20px;
     border-right: 5px solid white;
   }
-  .education,.skills,.awards {
+  .education,.skills,.awards,.objective,.experience {
     margin: 2em 0;
   }
   .education p {
@@ -69,7 +102,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   .awards p {
     margin: 0;
   }
+  .experience p {
+    margin: 0;
+  }
   .right {
-    margin-left: 10px;
+    flex-shrink: 100;
+    margin-left: 20px;
   }
 </style>
